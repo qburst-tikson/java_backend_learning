@@ -1,8 +1,6 @@
 package week1.day2;
-
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Optional;
 
 public class PrimitiveLabs {
     public static void main(String[] args) {
@@ -14,11 +12,9 @@ public class PrimitiveLabs {
 
         Map<String, Integer> stock = new HashMap<>();
         stock.put("apple", 10);
-        int apples = stock.getOrDefault("apple",0);     // works
-        int mangoes = stock.getOrDefault("Mangoes",0);
-        System.out.println("Apples: "+apples);
-        System.out.println("Mangoes: "+mangoes);
-
-
+        int apples = stock.getOrDefault("apple", 0);     // works
+        int mangoes = stock.getOrDefault("Mangoes", 0);
+        System.out.println("Apples: " + apples);
+        System.out.println("Mangoes: " + mangoes);
     }
 }
