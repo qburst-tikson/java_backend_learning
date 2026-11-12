@@ -14,8 +14,8 @@ public class PrimitiveLabs {
 
         Map<String, Integer> stock = new HashMap<>();
         stock.put("apple", 10);
-        int apples = stock.get("apple");     // works
-        int mangoes = Optional.ofNullable(stock.get("mango")).orElse(0);
+        int apples = stock.getOrDefault("apple",0);     // works
+        int mangoes = stock.getOrDefault("Mangoes",0);
         System.out.println("Apples: "+apples);
         System.out.println("Mangoes: "+mangoes);
 
