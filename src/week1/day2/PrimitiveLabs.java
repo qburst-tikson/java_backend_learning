@@ -12,7 +12,7 @@ public class PrimitiveLabs {
 
         Map<String, Integer> stock = new HashMap<>();
         stock.put("apple", 10);
-        int apples = stock.getOrDefault("apple", 0);     // works
+        int apples = stock.getOrDefault("Apples", 0);
         int mangoes = stock.getOrDefault("Mangoes", 0);
         System.out.println("Apples: " + apples);
         System.out.println("Mangoes: " + mangoes);
